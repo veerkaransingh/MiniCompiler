@@ -5,6 +5,16 @@ public class MiniCompiler {
 
     static class Token {
         String type, value;
+
+        Token(String type, String value) {
+            this.type = type;
+            this.value = value;
+        }
+
+        @Override
+        public String toString() {
+            return type + ": " + value;
+        }
     }
     public static void main(String[] args) {
         System.out.println("mini compiler");
