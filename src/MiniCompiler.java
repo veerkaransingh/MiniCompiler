@@ -32,6 +32,12 @@ public class MiniCompiler {
         int pos = 0;
 
         while (!sourceCode.isEmpty()) {
+            sourceCode = sourceCode.trim();
+            boolean matchFound = false;
+
+            for (String[] pattern : patterns) {
+                Matcher matcher = Pattern.compile("^"+ pattern[1]).matcher(sourceCode);
+            }
 
         }
     }
