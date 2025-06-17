@@ -21,12 +21,17 @@ public class MiniCompiler {
     static List<Token> tokenize(String sourceCode) throws Exception {
         String[][] patterns = {
                 {"Real", "[0-9]*\\.[0-9]+"},
-                {"Integer", "[]"}
-        }
+                {"Integer", "[0-9]+"},
+                {"Var_name", "[a-zA-Z_][a-zA-Z0-9]*"},
+                {"Operator", "[+\\-*/^]"},
+                {"Assignment", ":="},
+                {"Delimiter", "[;,:]"},
+                {"Paren", "[()]"}
+        };
 
     }
-    public static void main(String[] args) {
-        System.out.println("mini compiler");
+        public static void main (String[]args){
+            System.out.println("mini compiler");
+        }
     }
-}
 
