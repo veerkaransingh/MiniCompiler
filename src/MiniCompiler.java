@@ -28,7 +28,12 @@ public class MiniCompiler {
                 {"Delimiter", "[;,:]"},
                 {"Paren", "[()]"}
         };
+        List<Token>tokens = new ArrayList<>();
+        int pos = 0;
 
+        while (!sourceCode.isEmpty()) {
+
+        }
     }
         public static void main (String[]args){
             System.out.println("mini compiler");
