@@ -36,16 +36,20 @@ public class MiniCompiler {
             boolean matchFound = false;
 
             for (String[] pattern : patterns) {
-                Matcher matcher = Pattern.compile("^"+ pattern[1]).matcher(sourceCode);
+                Matcher matcher = Pattern.compile("^" + pattern[1]).matcher(sourceCode);
                 if (matcher.find()) {
                     String value = matcher.group();
                     tokens.add(new Token(pattern[0], value));
-                    sourceCode =
+                    sourceCode = sourceCode.substring(matcher.end());
+                    pos += matcher.end();
+                    matchFound = true;
+                    break;
                 }
-
             }
-
+            return tokens;
         }
+
+        // Syntax Analyzer
     }
         public static void main (String[]args){
             System.out.println("mini compiler");
