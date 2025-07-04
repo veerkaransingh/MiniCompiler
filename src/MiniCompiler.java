@@ -37,6 +37,12 @@ public class MiniCompiler {
 
             for (String[] pattern : patterns) {
                 Matcher matcher = Pattern.compile("^"+ pattern[1]).matcher(sourceCode);
+                if (matcher.find()) {
+                    String value = matcher.group();
+                    tokens.add(new Token(pattern[0], value));
+                    sourceCode =
+                }
+
             }
 
         }
