@@ -58,6 +58,10 @@ public class MiniCompiler {
             advance();
             program();
         }
+        static void advance(){
+            lookahead = tokens.hasNext() ? tokens.next() : null;
+
+        }
 
     }
         public static void main (String[]args){
