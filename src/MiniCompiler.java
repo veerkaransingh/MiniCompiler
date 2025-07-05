@@ -53,6 +53,12 @@ public class MiniCompiler {
         static Iterator <Token> tokens;
         static Token lookahead;
 
+        static void parse(List<Token> tokenList) throws Exception {
+            tokens = tokenList.iterator();
+            advance();
+            program();
+        }
+
     }
         public static void main (String[]args){
             System.out.println("mini compiler");
