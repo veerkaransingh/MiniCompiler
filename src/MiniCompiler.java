@@ -50,6 +50,9 @@ public class MiniCompiler {
         }
 
         // Syntax Analyzer
+        static Iterator <Token> tokens;
+        static Token lookahead;
+
     }
         public static void main (String[]args){
             System.out.println("mini compiler");
