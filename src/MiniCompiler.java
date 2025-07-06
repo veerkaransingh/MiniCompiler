@@ -60,7 +60,12 @@ public class MiniCompiler {
         }
         static void advance(){
             lookahead = tokens.hasNext() ? tokens.next() : null;
-
+        }
+        static void program() throws Exception {
+            statement();
+            if(lookahead != null){
+                throw new Exception("Syntax Error: Extra tokens after valid statement: "+ lookahead);
+            }
         }
 
     }
