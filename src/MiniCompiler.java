@@ -68,6 +68,11 @@ public class MiniCompiler {
             }
         }
 
+        static void statement() throws Exception {
+            parseVarList();
+
+        }
+
     }
         public static void main (String[]args){
             System.out.println("mini compiler");
