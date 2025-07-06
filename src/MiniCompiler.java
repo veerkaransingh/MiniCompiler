@@ -71,6 +71,16 @@ public class MiniCompiler {
         static void statement() throws Exception {
             parseVarList();
 
+            if ("Assignment".equals(lookahead.type)) {
+                //Assignment statement
+                advance();
+                expression();
+                if (!"Delimiter".equals(lookahead.type)|| !lookahead.value.equals (anObject: ";")){
+                    throw new Exception("Syntax Error: Expected ';' at the end, found " + lookahead);
+                }
+                }
+            }
+
         }
 
     }
