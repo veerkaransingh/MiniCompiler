@@ -78,7 +78,13 @@ public class MiniCompiler {
                 if (!"Delimiter".equals(lookahead.type)|| !lookahead.value.equals (anObject: ";")){
                     throw new Exception("Syntax Error: Expected ';' at the end, found " + lookahead);
                 }
-                }
+                advance();
+                }else if("Delimiter".equals(lookahead.type)&& lookahead.value.equals(anObject: "real"))) {
+                // declaration statement
+                    advance();
+                    if(!"Var_name".equals(lookahead.type)||!(lookahead.value.equals))
+
+
             }
 
         }
