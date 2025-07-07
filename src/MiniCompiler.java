@@ -82,7 +82,9 @@ public class MiniCompiler {
                 }else if("Delimiter".equals(lookahead.type)&& lookahead.value.equals(anObject: "real"))) {
                 // declaration statement
                     advance();
-                    if(!"Var_name".equals(lookahead.type)||!(lookahead.value.equals))
+                    if(!"Var_name".equals(lookahead.type)||!(lookahead.value.equals(anObject:"integer")||lookahead.value.equals(anObject:"real"))){
+                        throw new Exception("Syntax Error")
+                }
 
 
             }
