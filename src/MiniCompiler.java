@@ -83,13 +83,16 @@ public class MiniCompiler {
                 // declaration statement
                     advance();
                     if(!"Var_name".equals(lookahead.type)||!(lookahead.value.equals(anObject:"integer")||lookahead.value.equals(anObject:"real"))){
-                        throw new Exception("Syntax Error")
+                        throw new Exception("Syntax Error: Expected type (integer/real), found"+lookahead);
                 }
-
-
+                    advance();
+            }
+            else {
+                throw new Exception("Syntax Error: Expected ':=' or ':', found " + lookahead);
             }
 
         }
+        static void parseVAr
 
     }
         public static void main (String[]args){
