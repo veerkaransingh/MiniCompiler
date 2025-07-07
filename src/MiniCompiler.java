@@ -92,7 +92,7 @@ public class MiniCompiler {
             }
 
         }
-        static void parseVAr
+        static void parseVAr//
 
     }
         public static void main (String[]args){
