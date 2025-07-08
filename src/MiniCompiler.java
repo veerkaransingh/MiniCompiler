@@ -114,6 +114,16 @@ public class MiniCompiler {
             }
         }
 
+        static void term() throws Exception {
+            factor();
+            while (lookahead != null && "Operator".equals(lookahead.type) &&
+                    (lookahead.value.equals("*") || lookahead.value.equals("/"))) {
+                advance();
+                factor();
+            }
+        }
+
+
         public static void main (String[]args){
             System.out.println("mini compiler");
         }
