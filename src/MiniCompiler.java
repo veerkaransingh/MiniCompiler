@@ -92,9 +92,20 @@ public class MiniCompiler {
             }
 
         }
-        static void parseVAr//
+        static void parseVarList() throws Exception {
+            if (!"Var_name".equals(lookahead.type)) {
+                throw new Exception("Syntax Error: Expected variable name, found " + lookahead);
+            }
+            advance();
+            while (lookahead != null && "Delimiter".equals(lookahead.type) && lookahead.value.equals(",")) {
+                advance();
+                if (!"Var_name".equals(lookahead.type)) {
+                    throw new Exception("Syntax Error: Expected variable name after ',', found " + lookahead);
+                }
+                advance();
+            }
+        }
 
-    }
         public static void main (String[]args){
             System.out.println("mini compiler");
         }
