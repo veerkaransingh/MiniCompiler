@@ -144,7 +144,18 @@ public class MiniCompiler {
             } else {
                 operand();
             }
-        }/
+        }
+        static void operand() throws Exception {
+            if (lookahead == null) {
+                throw new Exception("Syntax Error: Unexpected end of input in operand()");
+            }
+            if ("Integer".equals(lookahead.type) || "Real".equals(lookahead.type) || "Var_name".equals(lookahead.type)) {
+                advance();
+            } else {
+                throw new Exception("Syntax Error: Invalid operand " + lookahead);
+            }
+        }
+
 
 
 
