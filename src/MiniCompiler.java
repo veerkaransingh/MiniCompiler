@@ -130,6 +130,22 @@ public class MiniCompiler {
                 power();
             }
         }
+        static void power() throws Exception {
+            if (lookahead == null) {
+                throw new Exception("Syntax Error: Unexpected end of input in power()");
+            }
+            if ("Paren".equals(lookahead.type) && lookahead.value.equals("(")) {
+                advance();
+                expression();
+                if (lookahead == null || !"Paren".equals(lookahead.type) || !lookahead.value.equals(")")) {
+                    throw new Exception("Syntax Error: Expected ')' ");
+                }
+                advance();
+            } else {
+                operand();
+            }
+        }
+
 
 
         public static void main (String[]args){
