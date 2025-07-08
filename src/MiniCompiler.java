@@ -122,6 +122,14 @@ public class MiniCompiler {
                 factor();
             }
         }
+        static void factor() throws Exception {
+            power();
+            while (lookahead != null && "Operator".equals(lookahead.type) &&
+                    lookahead.value.equals("^")) {
+                advance();
+                power();
+            }
+        }
 
 
         public static void main (String[]args){
