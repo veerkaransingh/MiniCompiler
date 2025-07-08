@@ -105,6 +105,14 @@ public class MiniCompiler {
                 advance();
             }
         }
+        static void expression() throws Exception {
+            term();
+            while (lookahead != null && "Operator".equals(lookahead.type) &&
+                    (lookahead.value.equals("+") || lookahead.value.equals("-"))) {
+                advance();
+                term();
+            }
+        }
 
         public static void main (String[]args){
             System.out.println("mini compiler");
