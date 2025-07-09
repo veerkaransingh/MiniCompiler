@@ -174,5 +174,19 @@ public class MiniCompiler {
                 }
 
 
+                System.out.println("\nParsing:");
+                parse(tokens);
+                System.out.println("Syntax is correct!");
+
+            } catch (Exception e) {
+                System.err.println(e.getMessage());
+            }
+        }
+    }
+
+
+
+
+
 
 
