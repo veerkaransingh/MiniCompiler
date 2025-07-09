@@ -1,6 +1,7 @@
 import java.util.regex.*;
 import java.util.*;
 
+// Main compiler class
 public class MiniCompiler {
     static class Token {
         String type, value;
