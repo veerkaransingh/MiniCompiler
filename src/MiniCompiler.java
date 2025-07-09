@@ -3,6 +3,8 @@ import java.util.*;
 
 // Main compiler class
 public class MiniCompiler {
+
+    // Token class to store each token's type and value
     static class Token {
         String type, value;
 
