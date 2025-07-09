@@ -168,3 +168,11 @@ public class MiniCompiler {
                 System.out.println("\nSource Code => " + code + "\n");
                 List<Token> tokens = tokenize(code);
 
+                System.out.println("Tokens:");
+                for (Token token : tokens) {
+                    System.out.println(token);
+                }
+
+
+
+
