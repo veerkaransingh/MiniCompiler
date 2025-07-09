@@ -35,6 +35,8 @@ public class MiniCompiler {
         List<Token> tokens = new ArrayList<>();
         int pos = 0;
 
+
+        // Loop through source code and match tokens
         while (!sourceCode.isEmpty()) {
             sourceCode = sourceCode.trim();
             boolean matchFound = false;
