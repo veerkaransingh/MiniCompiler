@@ -164,3 +164,7 @@ public class MiniCompiler {
                 Scanner input = new Scanner(System.in);
                 System.out.println("Enter code: ");
                 String code = input.nextLine();
+
+                System.out.println("\nSource Code => " + code + "\n");
+                List<Token> tokens = tokenize(code);
+
