@@ -159,8 +159,8 @@ public class MiniCompiler {
 
 
 
-        public static void main (String[]args){
-            System.out.println("mini compiler");
-        }
-    }
-
+        public static void main(String[] args) {
+            try {
+                Scanner input = new Scanner(System.in);
+                System.out.println("Enter code: ");
+                String code = input.nextLine();
