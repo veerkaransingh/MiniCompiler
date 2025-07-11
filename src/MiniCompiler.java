@@ -23,7 +23,7 @@ public class MiniCompiler {
     static List<Token> tokenize(String sourceCode) throws Exception {
         // Token types and their regex patterns
         String[][] patterns = {
-                {"Real", "[0-9]*\\.[0-9]+"},
+                {"Real", "[0-9]*\\.[0-9]+"},   // real numbers like 12.34
                 {"Integer", "[0-9]+"},
                 {"Var_name", "[a-zA-Z_][a-zA-Z0-9_]*"},
                 {"Operator", "[+\\-*/^]"},
