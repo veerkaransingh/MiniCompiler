@@ -27,9 +27,9 @@ public class MiniCompiler {
                 {"Integer", "[0-9]+"},         // Integer numbers like 56
                 {"Var_name", "[a-zA-Z_][a-zA-Z0-9_]*"}, // Variable names like x1, _temp
                 {"Operator", "[+\\-*/^]"},     // Operators: + - * / ^
-                {"Assignment", ":="},
-                {"Delimiter", "[;,:]"},
-                {"Paren", "[()]"}
+                {"Assignment", ":="},          // Assignment Operators
+                {"Delimiter", "[;,:]"},        // Delimiters: ;,:
+                {"Paren", "[()]"}              // Parentheses: ( )
         };
 
         List<Token> tokens = new ArrayList<>();
