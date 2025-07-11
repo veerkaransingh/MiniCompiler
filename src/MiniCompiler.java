@@ -26,7 +26,7 @@ public class MiniCompiler {
                 {"Real", "[0-9]*\\.[0-9]+"},   // real numbers like 12.34
                 {"Integer", "[0-9]+"},         // Integer numbers like 56
                 {"Var_name", "[a-zA-Z_][a-zA-Z0-9_]*"}, // Variable names like x1, _temp
-                {"Operator", "[+\\-*/^]"},
+                {"Operator", "[+\\-*/^]"},     // Operators: + - * / ^
                 {"Assignment", ":="},
                 {"Delimiter", "[;,:]"},
                 {"Paren", "[()]"}
