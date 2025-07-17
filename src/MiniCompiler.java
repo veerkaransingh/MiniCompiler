@@ -36,7 +36,7 @@ public class MiniCompiler {
         int pos = 0;
 
 
-        // Loop through source code and match tokens..
+        // Loop through source code and match tokens.
         while (!sourceCode.isEmpty()) {
             sourceCode = sourceCode.trim();
             boolean matchFound = false;
