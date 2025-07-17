@@ -86,7 +86,7 @@ public class MiniCompiler {
         parseVarList();
 
         if ("Assignment".equals(lookahead.type)) {
-            // Assignment statement
+            // Assignment statement--
             advance();
             expression();
             if (!"Delimiter".equals(lookahead.type) || !lookahead.value.equals(";")) {
