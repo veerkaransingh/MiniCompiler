@@ -94,7 +94,7 @@ public class MiniCompiler {
             }
             advance();
         } else if ("Delimiter".equals(lookahead.type) && lookahead.value.equals(":")) {
-            // Declaration statement
+            // Declaration statement--
             advance();
             if (!"Var_name".equals(lookahead.type) ||
                     !(lookahead.value.equals("integer") || lookahead.value.equals("real"))) {
