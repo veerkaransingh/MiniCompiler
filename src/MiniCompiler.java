@@ -19,7 +19,7 @@ public class MiniCompiler {
         }
     }
 
-    // Lexical Analyzer: Converts input string into list of tokens...
+    // Lexical Analyzer: Converts input string into list of tokens..
     static List<Token> tokenize(String sourceCode) throws Exception {
         // Token types and their regex patterns
         String[][] patterns = {
