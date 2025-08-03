@@ -1,5 +1,5 @@
 public class Methodsinjava {
-    static int logic(int x, int y) {
+     static int logic(int x, int y) {
         int z;
         if (x > y) {
             z = x + y;
@@ -15,6 +15,9 @@ public class Methodsinjava {
         int a = 5;
         int b = 7;
         int c;
+
+        //Methodsinjava obj = new Methodsinjava(); // calling the method by creating an object of the class in which it exists!!!!
+       // c = obj.logic(a,b);
         c = logic(a,b); // called the function
 
         int a1 = 1;
