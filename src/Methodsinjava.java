@@ -23,6 +23,6 @@ public class Methodsinjava {
         c2 = logic(a1, b1);
 
         System.out.println(c);
-        System.out.println(c2);
+        System.out.println(c2); //
     }
 }
