@@ -34,7 +34,7 @@ public class Methods_overloading {
         //change(x);
        // System.out.println("The value of x after running method change will be " + x);
 
-// /methods overloading - methods having same name ,but performing things.
+//methods overloading - methods having same name ,but performing things.
 
     }
 }
