@@ -1,6 +1,6 @@
 public class Recursion {
 
-    public static int fibbonacci(int x){
+ /*   public static int fibbonacci(int x){
         if(x==0){
             return 0;
         } else if (x==1) {
@@ -44,7 +44,30 @@ public class Recursion {
         System.out.println("The factorial of number "+n+ " is: " + factorial(n));
         System.out.println("The factorial of number "+n+ " is: " + iterativefactorial(n));
 
+    }
     } */
+
+    public static void starPattern(int n){ // suppose we gave n as 3 to print three lines having 1 star, 2 stars, 3 stars respectively
+        if(n>0){  // ofcourse n is greater than 3, will enter to loop
+            starPattern(n-1); //will first implement for n = 2
+            /* logic
+            will implement starPattern(2) + print 3 stars in a line as per for loop
+            resolves to starPattern(1) + print 2 stars in a line + print 3 stars in a line
+            resolves to starPattern(0)+ print 1 star in a line + print 2 stars in a line + print 3 stars in a line
+             */
+            for(int i = 0; i < n; i++ ){
+                System.out.print("*");
+
+            }
+            System.out.println();// just to insert a line
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Pattern of stars for 3 lines starting from 1");
+        starPattern(3);
     }
     }
 
