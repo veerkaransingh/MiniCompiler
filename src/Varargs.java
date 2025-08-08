@@ -3,7 +3,7 @@ public class Varargs {
     //    return a+b;
   //  }
     public static int sum(int ...arr){ // put all the arguments into an array
-        //available as int[] arr
+        //available as int[] arr.
         int result = 0;
         for(int a: arr) { //for element a in arr array..
             result += a;
