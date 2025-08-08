@@ -1,6 +1,22 @@
 public class Recursion {
 
-    public static int factorial(int n){
+    public static int fibbonacci(int x){
+        if(x==0){
+            return 0;
+        } else if (x==1) {
+            return 1;
+        }else {
+            return fibbonacci(x-1) +fibbonacci(x-2);
+        }
+    }
+
+    public static void main(String[] args) {
+        int count = 15;
+        System.out.println("Series upto number " + count + " is: ");
+        for (int i = 0; i <= count; i++) {
+            System.out.print(fibbonacci(i) + " ");
+        }
+ /*   public static int factorial(int n){
         if( n==0 || n==1){
             return 1;
         }
@@ -28,5 +44,9 @@ public class Recursion {
         System.out.println("The factorial of number "+n+ " is: " + factorial(n));
         System.out.println("The factorial of number "+n+ " is: " + iterativefactorial(n));
 
+    } */
     }
-}
+    }
+
+
+
