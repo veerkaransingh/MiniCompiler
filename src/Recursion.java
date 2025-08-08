@@ -14,8 +14,8 @@ public class Recursion {
         }
         else{
             int product = 1;
-            for(int i = 1; i <=n ; i++){
-                product*= i;
+            for(int i = 1; i <=n ; i++){ // we are basically running a for loop, starting from i =1 to n,
+                product*= i;// multiply and assign!!!
 
             }
             return product;
