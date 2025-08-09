@@ -2,7 +2,7 @@ import java.util.*;
 
 
  class Employee{ // created a custom class Employee without access modifier which can only come ones
-    int id;
+    int id; //setting attributes or adjectives for this employee
     String name;
     int salary;
 
