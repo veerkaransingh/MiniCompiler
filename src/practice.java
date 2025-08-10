@@ -22,6 +22,8 @@ public class practice {
 
         karan.getSalary();
         karan.setName("Coding With Karan");
+        karan.salary = 111222;
+        System.out.println(karan.getSalary());
         System.out.println(karan.getName());
 
         }
