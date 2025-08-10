@@ -16,9 +16,47 @@ class Employee1{
     }
 }
 
+class cellPhone{
+    public void ring(){
+        System.out.println("ringing");
+    }
+
+    public void vibrate(){
+        System.out.println("vibrating...");
+    }
+
+    public void callFriend(){
+        System.out.println("calling you");
+    }
+}
+
+class Square{
+    int side; // setting attribute of square class
+    public int area(){
+        return side*side;
+    }
+    public int perimeter(){
+        return 4*side;
+    }
+
+}
+
+class TommyVecetti{  //created a new custom class
+    public void hit(){
+        System.out.println("hitting the enemy");
+    }
+    public void run(){
+        System.out.println("running from the enemy");
+    }
+    public void fire(){
+        System.out.println("firing on the enemy");
+    }
+}
+
+
 public class practice {
     public static void main(String[] args) {
-        Employee1 karan = new Employee1();
+    /*    Employee1 karan = new Employee1();
 
         karan.getSalary();
         karan.setName("Coding With Karan");
@@ -26,5 +64,23 @@ public class practice {
         System.out.println(karan.getSalary());
         System.out.println(karan.getName());
 
-        }
+        cellPhone samsung = new cellPhone();
+        samsung.callFriend();
+        samsung.vibrate();
+        samsung.ring(); */
+
+
+       /* Square sq = new Square(); // instantiation of an object of square class named as sq
+        sq.side = 3;
+        System.out.println(sq.area());  //calling the methods
+        System.out.println(sq.perimeter()); */
+
+        TommyVecetti t = new TommyVecetti();
+        t.fire();
+        t.run();
+        t.hit();
+
     }
+    }
+
+
