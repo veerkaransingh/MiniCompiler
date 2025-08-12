@@ -1,3 +1,4 @@
+package javapractice;
 
 class Employee1{
     int salary;
@@ -56,7 +57,7 @@ class TommyVecetti{  //created a new custom class
 
 public class practice {
     public static void main(String[] args) {
-    /*    Employee1 karan = new Employee1();
+    /*    javapractice.Employee1 karan = new javapractice.Employee1();
 
         karan.getSalary();
         karan.setName("Coding With Karan");
@@ -64,13 +65,13 @@ public class practice {
         System.out.println(karan.getSalary());
         System.out.println(karan.getName());
 
-        cellPhone samsung = new cellPhone();
+        javapractice.cellPhone samsung = new javapractice.cellPhone();
         samsung.callFriend();
         samsung.vibrate();
         samsung.ring(); */
 
 
-       /* Square sq = new Square(); // instantiation of an object of square class named as sq
+       /* javapractice.Square sq = new javapractice.Square(); // instantiation of an object of square class named as sq
         sq.side = 3;
         System.out.println(sq.area());  //calling the methods
         System.out.println(sq.perimeter()); */

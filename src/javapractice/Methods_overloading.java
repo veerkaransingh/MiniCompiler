@@ -1,3 +1,5 @@
+package javapractice;
+
 public class Methods_overloading {
     //static void tellJoke(){  // static keyword is used to associate a method of a given class with the class rather than the object.
         // static method in a class is shared by all objects. we don't need to create an object to call method.

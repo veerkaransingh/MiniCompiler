@@ -1,3 +1,5 @@
+package javapractice;
+
 public class Methodsinjava {
      static int logic(int x, int y) {
         int z;
@@ -16,7 +18,7 @@ public class Methodsinjava {
         int b = 7;
         int c;
 
-        //Methodsinjava obj = new Methodsinjava(); // calling the method by creating an object of the class in which it exists!!!!
+        //javapractice.Methodsinjava obj = new javapractice.Methodsinjava(); // calling the method by creating an object of the class in which it exists!!!!
        // c = obj.logic(a,b);
         c = logic(a,b); // called the function
 

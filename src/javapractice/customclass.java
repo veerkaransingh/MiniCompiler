@@ -1,7 +1,7 @@
-import java.util.*;
+package javapractice;
 
 
- class Employee{ // created a custom class Employee without access modifier which can only come ones
+class Employee{ // created a custom class javapractice.Employee without access modifier which can only come ones
     int id; //setting attributes or adjectives for this employee
     String name;
     int salary;
