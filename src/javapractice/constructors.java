@@ -6,7 +6,7 @@ class Person{
     private String name;
 
     public Person(int id, String name ){
-        this.name = name;
+        this.name = name; // name and id are local variables of this constructor, whereas this.name , this.id means objects' variables
         this.id = id;
 
     }
