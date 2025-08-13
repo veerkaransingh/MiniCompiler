@@ -36,7 +36,7 @@ public class constructors {
     public static void main(String[] args) {
         Person p1 = new Person(4,"karan");
       //  p1.setid(3); // passed 3 as the id number to the setter method
-        System.out.println(p1.getid()); // called the getter method to print id..
+        System.out.println(p1.getid()); // called the getter method to print id...
         System.out.println(p1.getname());
 
     }
