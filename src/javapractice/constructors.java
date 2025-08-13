@@ -7,7 +7,7 @@ class Person{
 
     public Person(int id, String name ){
         this.name = name; // name and id are local variables of this constructor, whereas this.name , this.id means objects' variables
-        this.id = id;
+        this.id = id; //means “put the value from the parameter into the object’s variable”.
 
     }
 //   public Person(){   // this is default constructor, we have not passed any value insdie the brackets
@@ -36,7 +36,7 @@ public class constructors {
     public static void main(String[] args) {
         Person p1 = new Person(4,"karan");
       //  p1.setid(3); // passed 3 as the id number to the setter method
-        System.out.println(p1.getid()); // called the getter method to print id
+        System.out.println(p1.getid()); // called the getter method to print id.
         System.out.println(p1.getname());
 
     }
