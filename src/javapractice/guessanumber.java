@@ -29,7 +29,7 @@ class Game{
             System.out.println("Too low!!!! Please try again");
 
         }else(guess>number){
-            sout
+            System.out.println();
 
         }
 
