@@ -42,6 +42,8 @@ public class constructors {
         System.out.println(p1.getname());
         System.out.println(p2.getid());
         System.out.println(p2.getname());
+        System.out.println(p3.getid());
+        System.out.println(p3.getname());
 
 
 
