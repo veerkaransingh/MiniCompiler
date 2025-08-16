@@ -40,7 +40,7 @@ public class constructors {
         System.out.println(p1.getid()); // called the getter method to print id.
         System.out.println(p1.getname());
         System.out.println(p2.getid());
-        System.out.println();
+        System.out.println(p2.getname());
 
 
     }
