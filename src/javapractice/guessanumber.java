@@ -28,10 +28,10 @@ class Game{
         else if(guess<number){
             System.out.println("Too low!!!! Please try again");
 
-        }else(guess>number){
-            System.out.println();
-
+        }else{
+            System.out.println("Too high!!! Please try again");
         }
+        return false;
 
     }
 
