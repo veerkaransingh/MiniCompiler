@@ -35,10 +35,12 @@ class Person{
 public class constructors {
     public static void main(String[] args) {
         Person p1 = new Person(4,"karan");
-        Person P2 = new Person(5, "haris");
+        Person p2 = new Person(5, "haris");
       //  p1.setid(3); // passed 3 as the id number to the setter method
         System.out.println(p1.getid()); // called the getter method to print id.
         System.out.println(p1.getname());
+        System.out.println(p2.getid());
+        System.out.println();
 
 
     }
