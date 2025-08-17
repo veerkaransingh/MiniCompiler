@@ -29,10 +29,32 @@ class Cylinder{
     }
 }
 
+class Rectangle{
+    private int length;
+    private int breadth;
+
+    public Rectangle(){
+        this.breadth = 5;
+        this.length = 4;
+    }
+    public Rectangle(int length, int breadth){
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public int getLength(){
+        return length;
+    }
+    public  int getBreadth(){
+        return breadth;
+    }
+}
+
 public class ps2 {
     public static void main(String[] args) {
 
         Cylinder myCylinder = new Cylinder(9,12);
+        Rectangle myRectangle = new Rectangle(5,9);
        // int h = 12;
        // int r = 231;
        // myCylinder.setHeight(h);
@@ -41,5 +63,7 @@ public class ps2 {
         System.out.println(myCylinder.getRadius());
         System.out.println(myCylinder.surfaceArea());
         System.out.println(myCylinder.volume());
+        System.out.println(myRectangle.getBreadth());
+        System.out.println(myRectangle.getLength());
     }
 }
