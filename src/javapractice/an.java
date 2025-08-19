@@ -18,6 +18,9 @@ class animal{
     public void setName(String name){
         this.name = name;
     }
+    public void bite(){
+        System.out.println("the animal barks:::::");
+    }
 }
 
 class Dog extends animal{
