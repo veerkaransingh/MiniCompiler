@@ -36,6 +36,7 @@ public class an {
     public static void main(String[] args) {
         Dog d = new Dog("Tommy",2);
         d.bark();
+        d.bark();
 
         System.out.println("Dog's name: " +d.getName());
         System.out.println("Dog's age: " + d.getAge());
