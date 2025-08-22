@@ -20,6 +20,7 @@ class base2 extends base1{
 
     public void setY(int y){
         this.y = y; //
+        //
     }
 }
 public class Constructorsininheritance {
