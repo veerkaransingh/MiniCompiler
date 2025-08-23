@@ -24,4 +24,5 @@ class Second extends First{
 }
 public class this_super {
     //
+    //
 }
