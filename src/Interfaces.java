@@ -1,5 +1,5 @@
 public class Interfaces {
     public static void main(String[] args) {
-        System.out.println("lets learn");
+        System.out.println("lets learn interfaces");
     }
 }
