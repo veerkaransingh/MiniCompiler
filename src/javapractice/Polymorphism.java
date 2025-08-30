@@ -1,6 +1,7 @@
 package javapractice;
 
-interface MyCamera{
+
+interface MyCamera2{
     void takeSnap();
     void recordVideo();
     default void record4kClip(){
@@ -11,11 +12,11 @@ interface MyCamera{
     }
 }
 
-interface MyWifi{
+interface MyWifi2{
     String[] getNetworks();
     void connectToNetwork(String network);
 }
-class CellPhone{
+class CellPhone2{
 
     void callNumber(int phonenumber){
         System.out.println("Calling " + phonenumber);
@@ -25,7 +26,7 @@ class CellPhone{
     }
 }
 
-class MySmartPhone extends CellPhone implements MyWifi, MyCamera{
+class MySmartPhone2 extends CellPhone2 implements MyWifi2, MyCamera2{
     public void takeSnap(){
         System.out.println("Taking snap");
     }
@@ -41,13 +42,15 @@ class MySmartPhone extends CellPhone implements MyWifi, MyCamera{
         System.out.println("Connecting to " + network);
     }
 }
-public class Defaultmethods {
-    public static void main(String[] args) {
-        MySmartPhone ms = new MySmartPhone();
-        String[] ar = ms.getNetworks();
-        //ms.greet(); -- not possible because it is a private method
-        for(String item: ar){
-            System.out.println(item);
-        }
+
+
+public class Polymorphism {
+    public static void main(String[] args){
+        MyCamera2 cam1 = new MySmartPhone2(); //this is a smartphone,but use it as a camera
+       // cam1.getNetworks(); -- not allowed as we are asking for camera functions, not for wifi functions
+        cam1.recordVideo();
+        cam1.record4kClip();
+
     }
 }
+
