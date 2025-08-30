@@ -34,8 +34,13 @@ class MySmartPhone extends CellPhone implements MyWifi, MyCamera{
     public void connectToNetwork(String network){
         System.out.println("Connecting to " + network);
     }
-
-
 }
 public class Defaultmethods {
+    public static void main(String[] args) {
+        MySmartPhone ms = new MySmartPhone();
+        String[] ar = ms.getNetworks();
+        for(String item: ar){
+            System.out.println(item);
+        }
+    }
 }
