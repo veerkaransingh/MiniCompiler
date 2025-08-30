@@ -48,8 +48,16 @@ public class Polymorphism {
     public static void main(String[] args){
         MyCamera2 cam1 = new MySmartPhone2(); //this is a smartphone,but use it as a camera
        // cam1.getNetworks(); -- not allowed as we are asking for camera functions, not for wifi functions
+        // we can only use methods created in camera interface, functions of camera
         cam1.recordVideo();
         cam1.record4kClip();
+
+        MySmartPhone2 s = new MySmartPhone2();
+        s.takeSnap();
+        s.recordVideo();
+        s.record4kClip();
+        s.getNetworks();
+        s.connectToNetwork("Rogers");
 
     }
 }
