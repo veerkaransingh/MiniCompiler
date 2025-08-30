@@ -2,11 +2,11 @@ package javapractice;
 
 interface MyCamera{
     void takeSnap();
-    void recordvideo();
+    void recordVideo();
 }
 
 interface MyWifi{
-    String[] getNetwords();
+    String[] getNetworks();
     void connectToNetwork(String network);
 }
 class CellPhone{
@@ -31,7 +31,9 @@ class MySmartPhone extends CellPhone implements MyWifi, MyCamera{
         String[] networkList = {"Harry", "Prashhant", "Karan"};
         return networkList;
     }
-    public void connectToNetwork
+    public void connectToNetwork(String network){
+        System.out.println("Connecting to " + network);
+    }
 
 
 }
