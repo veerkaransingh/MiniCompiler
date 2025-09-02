@@ -49,6 +49,7 @@ public class Polymorphism {
         MyCamera2 cam1 = new MySmartPhone2(); //this is a smartphone,but use it as a camera
        // cam1.getNetworks(); -- not allowed as we are asking for camera functions, not for wifi functions
         // we can only use methods created in camera interface, functions of camera
+        // this is basically polymorphism, when we created object of smartphone, but reference of camera, can use only methods of camera interface
         cam1.recordVideo();
         cam1.record4kClip();
 
