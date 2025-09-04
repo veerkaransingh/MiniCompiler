@@ -5,6 +5,8 @@ public class Packages {
         Scanner sc = new Scanner(System.in);
         int s = sc.nextInt();
         long s1 = sc.nextLong();
+        String string = sc.next();
+
 
         System.out.println("This is my scanner");
 
