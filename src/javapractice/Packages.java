@@ -11,7 +11,7 @@ public class Packages {
         System.out.println("This is my scanner");
         System.out.println(s);
         System.out.println(s1);
-        System.out.println(String);
+        System.out.println(string);
 
     }
 
