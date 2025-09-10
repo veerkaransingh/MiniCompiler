@@ -9,21 +9,25 @@ public class Nested_try_catch {
         marks[1] = 56;
         marks[2] = 6;
         Scanner sc = new Scanner(System.in);
+        boolean flag = true;
+        while(flag){
         System.out.println("Enter the value of index ");
         int ind = sc.nextInt();
-
         try{
             System.out.println("Welcome Here!");
             try{
                 System.out.println(marks[ind]);
+                flag = false;
             }catch(ArrayIndexOutOfBoundsException e){
                 System.out.println("Sorry this index does not exist");
                 System.out.println("Exception in level 2");
             }
-        }catch(Exception e){
+        }catch(Exception e) {
             System.out.println("Exception in level one");
             System.out.println(e);
+        }
 
         }
+        System.out.println("Thanks for using this program ");
     }
 }
