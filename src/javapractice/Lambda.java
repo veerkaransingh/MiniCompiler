@@ -41,6 +41,7 @@ public class Lambda {
         };
         obj.meth1(); */
 // lambda expression
+        // alternate way of using interfaces
         MathOperation m = (a,b) ->a+b;
         m.operate(1,2);
 
