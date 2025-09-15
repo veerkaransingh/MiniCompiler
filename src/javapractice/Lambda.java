@@ -40,7 +40,7 @@ public class Lambda {
             }
         };
         obj.meth1(); */
-
+// lambda
         MathOperation m = (a,b) ->a+b;
         m.operate(1,2);
 
