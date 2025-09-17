@@ -45,6 +45,8 @@ public class Lambda {
         MathOperation m = (a,b) ->a+b;
         m.operate(1,2);
 
+        //
+
         List<String> names = Arrays.asList("Karan", "Veer", "Singh");
 
         // Using lambda with forEach
