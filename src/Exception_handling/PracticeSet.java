@@ -21,6 +21,7 @@ public class PracticeSet {
         }
 
         //problem no 3
+        //solution
         boolean flag = true;
 
         int[] marks = new int[3];
