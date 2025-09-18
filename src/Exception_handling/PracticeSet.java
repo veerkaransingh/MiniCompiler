@@ -28,6 +28,7 @@ public class PracticeSet {
         marks[0] = 7;
         marks[1] = 56;
         marks[2] = 6;
+        marks[3] = 88;
         Scanner sc = new Scanner(System.in);
         int n = 9;
         int i = 0;
