@@ -16,7 +16,13 @@ class MyGenerics<T1>{
     public void setVal(int val){
         this.val = val;
     }
-    public T1 getT1
+    public T1 getT1(){
+        return t1;
+
+    }
+    public void setT1(T1 t1){
+        this.t1 = t1;
+    }
 }
 
 
@@ -29,6 +35,10 @@ public class Generics_cwk {
         arraylist.add(54);
         arraylist.add(643);
        // arraylist.add(new Scanner(System.in));
-        int a = (int) arraylist.get(2);
+        //int a = (int) arraylist.get(2);
+
+        MyGenerics <String> g1 = new MyGenerics(23,"myString");
+        String str = g1.getT1();
+        System.out.println(str);
     }
 }
