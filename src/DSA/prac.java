@@ -29,6 +29,8 @@ public class prac {
         for(int num : arr) { // for every element present in this array, print that element
             System.out.print(num);
             //
+
+            //
         }
      }
 }
