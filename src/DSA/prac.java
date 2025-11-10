@@ -30,7 +30,7 @@ public class prac {
             System.out.print(num);
             //
 
-            //
+
         }
      }
 }
